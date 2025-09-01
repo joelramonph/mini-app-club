@@ -2,8 +2,9 @@
 const telegramUserId = Telegram.WebApp.initDataUnsafe.user.id;
 
 // URL de tus flujos de trabajo de n8n
-const AUTH_WEBHOOK_URL = "http://localhost:5678/webhook-test/api/v1/auth";
-const DASHBOARD_WEBHOOK_URL = "http://localhost:5678/webhook-test/api/v1/dashboard";
+const NGROK_URL = "https://877bb7030997.ngrok-free.app"; 
+const AUTH_WEBHOOK_URL = `${NGROK_URL}/webhook-test/api/v1/auth`;
+const DASHBOARD_WEBHOOK_URL = `${NGROK_URL}/webhook-test/api/v1/dashboard`;
 
 let token = null;
 
