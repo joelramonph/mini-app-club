@@ -2,7 +2,8 @@
 const telegramUserId = Telegram.WebApp.initDataUnsafe.user.id;
 
 // URL de tus flujos de trabajo de n8n
-const NGROK_URL = "https://877bb7030997.ngrok-free.app"; 
+const NGROK_URL = "https://a3d52b95ea15.ngrok-free.app"; 
+
 const AUTH_WEBHOOK_URL = `${NGROK_URL}/webhook-test/api/v1/auth`;
 const DASHBOARD_WEBHOOK_URL = `${NGROK_URL}/webhook-test/api/v1/dashboard`;
 
