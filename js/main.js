@@ -113,5 +113,8 @@ async function init() {
     }
 }
 
+
+
+
 // Inicia el proceso cuando la Mini App se carga
 init();
