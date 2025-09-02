@@ -111,6 +111,20 @@ async function init() {
     } else {
         showError();
     }
+
+    // ... (dentro de la función init)
+    /*
+if (studentData) {
+    // 3. Muestra los datos en la interfaz
+    nombreElement.textContent = studentData.nombre;
+    rolElement.textContent = studentData.rol;
+    fechaElement.textContent = studentData.fechaIngreso;
+    showContent(); // Esta función oculta los mensajes de carga y error
+} else {
+    showError(); // Esto se ejecuta si la respuesta no tiene datos
+}
+*/
+
 }
 
 
