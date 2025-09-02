@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Estudiante</title>
-    <link rel="stylesheet" href="css/main.css">
-
-    <style>
-  body {
-    background-color: white !important;
-  }
-  .hidden {
-    display: none;
-  }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acceso al Dashboard</title>
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+ body {
+ background-color: white !important;
+ }
+ .hidden {
+display: none;
+ }
 </style>
-</head>
-<body>
+    </head>
+    <body>
 
-    <div class="container">
-        <h1>Dashboard del Estudiante</h1>
-    <div id="loading" class="hidden">Cargando datos...</div>
-    <div id="dashboard-content" class="hidden">
-        <div class="card-item">
-            <strong>Nombre:</strong> <span id="nombre-estudiante"></span>
-        </div>
-        <div class="card-item">
-            <strong>Rol:</strong> <span id="rol-estudiante"></span>
-        </div>
-        <div class="card-item">
-            <strong>Fecha de Ingreso:</strong> <span id="fecha-ingreso"></span>
-        </div>
-    </div>
-    <div id="error-message" class="hidden">Error al cargar los datos.</div>
-    </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="js/main.js"></script>
+        <div class="container">
+            <div id="role-selection-screen">
+                <h1>Selecciona tu Rol</h1>
+                <p>Accede a tu dashboard de estudiante, padre o profesor.</p>
+                <button id="estudiante-btn">Soy Estudiante</button>
+                <button id="padres-btn">Soy Padre / Madre</button>
+                <button id="profesor-btn">Soy Profesor</button>
+            </div>
 
-</body>
+            <div id="loading" class="hidden">Cargando datos...</div>
+            <div id="dashboard-content" class="hidden">
+                <h1>Dashboard del Estudiante</h1>
+                <div class="card-item">
+                    <strong>Nombre:</strong> <span
+                        id="nombre-estudiante"></span>
+                </div>
+                <div class="card-item">
+                    <strong>Rol:</strong> <span id="rol-estudiante"></span>
+                </div>
+                <div class="card-item">
+                    <strong>Fecha de Ingreso:</strong> <span
+                        id="fecha-ingreso"></span>
+                </div>
+            </div>
+
+            <div id="error-message" class="hidden">Error al cargar los
+                datos.</div>
+        </div>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
 </html>
