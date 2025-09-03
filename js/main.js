@@ -1,9 +1,11 @@
+// FIND("{{$json.body.telegramUserId}}", {ID de Telegram})
+// nodo If {{ $items("Search records").length }}
 // Obtiene el ID de usuario de Telegram usando la API de la Mini App
 const telegramUserId = Telegram.WebApp.initDataUnsafe.user.id;
 
 // URL de tus flujos de trabajo de n8n
 // ¡Importante! Asegúrate de que esta URL sea la que te da ngrok en la terminal.
-const NGROK_URL = "https://9835c257437d.ngrok-free.app";
+const NGROK_URL = "https://1730b302c311.ngrok-free.app";
 
 const AUTH_WEBHOOK_URL = `${NGROK_URL}/webhook/api/v1/auth`;
 const DASHBOARD_WEBHOOK_URL = `${NGROK_URL}/webhook/api/v1/dashboard`;
