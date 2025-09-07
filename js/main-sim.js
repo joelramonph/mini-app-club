@@ -10,7 +10,7 @@ const simulatedUsers = {
 };
 
 // URL de tus flujos de trabajo de n8n
-const NGROK_URL = "https://318fc5a91a96.ngrok-free.app"; // cambia al tuyo
+const NGROK_URL = "https://47dc97692052.ngrok-free.app"; // cambia al tuyo
 const AUTH_WEBHOOK_URL = `${NGROK_URL}/webhook/api/v1/auth`;
 const DASHBOARD_WEBHOOK_URL = `${NGROK_URL}/webhook/api/v1/dashboard`;
 
